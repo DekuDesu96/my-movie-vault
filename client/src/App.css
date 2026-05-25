@@ -1,0 +1,100 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin-bottom: 8px;
+  font-size: 36px;
+}
+
+.app-header p {
+  color: #555;
+  font-size: 18px;
+}
+
+.film-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.film-card {
+  padding: 20px;
+  border: 2px solid #111;
+  border-radius: 18px;
+  background-color: #ffffff;
+  color: #111;
+  box-shadow: 8px 8px 0 #111;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.film-card:hover {
+  background-color: #111;
+  color: #ffffff;
+  transform: translate(6px, 6px);
+  box-shadow: 2px 2px 0 #111;
+}
+
+.film-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: black;
+}
+
+.film-card:hover h2 {
+  color: white;
+}
+.film-details {
+  margin-bottom: 16px;
+}
+
+.film-details p {
+  margin: 6px 0;
+  color: inherit;
+}
+
+.delete-button {
+  border: 2px solid #111;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background-color: #111;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 4px 4px 0 #555;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.film-card:hover .delete-button {
+  background-color: #ffffff;
+  color: #111;
+  border-color: #ffffff;
+  box-shadow: 4px 4px 0 #777;
+}
+
+.delete-button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #777;
+}
