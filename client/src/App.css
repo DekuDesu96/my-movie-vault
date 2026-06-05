@@ -98,3 +98,80 @@
   transform: translate(3px, 3px);
   box-shadow: 1px 1px 0 #777;
 }
+
+.form-card {
+  margin: 0 auto 32px;
+  max-width: 700px;
+  padding: 24px;
+  border: 2px solid #111;
+  border-radius: 18px;
+  background-color: #ffffff;
+  color: #111;
+  box-shadow: 8px 8px 0 #111;
+}
+
+.form-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.film-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  outline: none;
+  box-shadow: 3px 3px 0 #111;
+}
+
+.submit-button {
+  grid-column: 1 / -1;
+  justify-self: start;
+  border: 2px solid #111;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 4px 4px 0 #555;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: #111;
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #555;
+}
+
+@media (max-width: 650px) {
+  .film-form {
+    grid-template-columns: 1fr;
+  }
+}
